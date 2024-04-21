@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherForecast</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    
+<div class="card"> <!--This line creates a div element with the class "card". This class will be used to style the overall card.-->
+
+    
+    <!-- This block of code creates a search bar. The input field has the placeholder text "Enter city name" and the spellcheck attribute set to "false" to prevent browser spellcheck from interfering with user input. The button has an image inside it, presumably a search icon. -->
+    <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false">
+        <button> <img src="images/search.png"></button>
+    </div>
+    
+
+    <!-- This block of code creates an error message that will be displayed if the user enters an invalid city name. -->
+    <div class="error">
+        <p>Invalid city name</p>
+    </div>
+
+
+     <div class="weather">  <!--This line creates a <div> element with the class weather. This class will be used to style the weather widget. -->
+
+
+        <img src="images/rain.png" class="weather-icon"> <!--will be displayed as the weather icon.--> 
+        <h1 class="temp">22°C</h1> <!--display the current temperature in a large heading.-->
+        <h2 class="city">Delhi</h2> <!--display the city name in a smaller heading.-->
+        <div class="details"> <!--This class will be used to style the weather details section.-->
+
+            <!--used to style each column of weather details.-->
+            <div class="col"> 
+                <img src="images/humidity.png"> <!--This image will be displayed as the humidity icon.-->
+                <div>
+                    <p class="humidity">50%</p> <!--current humidity percentage-->
+                    <p>Humidity</p> <!--label-->
+                </div>
+                 
+            </div>
+
+            <!--This will be used to display the wind speed details.-->
+            <div class="col">
+                <img src="images/wind.png"> <!--This image will be displayed as the wind icon.-->
+                <div>
+                    <p class="wind">15km/h</p> <!--current wind speed-->
+                    <p>Wind Speed</p> <!--label-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="weather.js"></script>
+
+</body>
+</html>
